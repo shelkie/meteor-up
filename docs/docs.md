@@ -503,6 +503,8 @@ module.exports = {
 
 Some registries, such as Gitlab's or Google Cloud's, require image names to start with a certain string. For example, the prefix for Google Cloud would be `eu.gcr.io/<project id>`, and for GitLab it would be `registry.gitlab.com/<group name>/<project name>`.
 
+Run `mup setup` after adding or changing privateDockerRegistry settings.
+
 ### Listening to specific IP address (IP Binding)
 
 If you want Docker to listen only on a specific network interface, such as `127.0.0.1`, add a variable called `bind` with the value of the IP address you want to listen to.
